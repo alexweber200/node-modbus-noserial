@@ -3,7 +3,6 @@
 
 const events = require("events");
 const EventEmitter = events.EventEmitter || events;
-const SerialPort = require("serialport").SerialPort;
 const modbusSerialDebug = require("debug")("modbus-serial");
 
 const crc16 = require("../utils/crc16");
@@ -128,7 +127,7 @@ class AsciiPort extends EventEmitter {
         this._length = 0;
 
         // create the SerialPort
-        this._client = new SerialPort(Object.assign({}, { path }, options));
+        this._client = {};
 
         // register the port data event
         this._client.on("data", function(data) {

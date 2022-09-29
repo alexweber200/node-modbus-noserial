@@ -1,29 +1,25 @@
 {
-  "name": "modbus-serial",
-  "version": "8.0.5",
-  "description": "A pure JavaScript implemetation of MODBUS-RTU (Serial and TCP) for NodeJS.",
+  "name": "modbus-noserial",
+  "version": "0.1.0",
+  "description": "A fork of Yaacov Zamir's NodeJS modbus package for only modbus-TCP.",
   "main": "index.js",
   "scripts": {
     "test": "mocha --recursive"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/yaacov/node-modbus-serial.git"
+    "url": "git+https://github.com/alexweber200/node-modbus-noserial.git"
   },
   "keywords": [
     "modbus",
-    "rtu",
-    "serial",
-    "port",
-    "com",
-    "arduino"
+    "rtu"
   ],
   "author": "Yaacov Zamir <kobi.zamir@gmail.com>",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/yaacov/node-modbus-serial/issues"
+    "url": "https://github.com/alexweber200/node-modbus-noserial/issues"
   },
-  "homepage": "https://github.com/yaacov/node-modbus-serial#readme",
+  "homepage": "https://github.com/alexweber200/node-modbus-noserial#readme",
   "devDependencies": {
     "chai": "^4.2.0",
     "eslint": "^8.12.0",
@@ -39,7 +35,6 @@
     "web-bluetooth-mock": "^1.0.2"
   },
   "dependencies": {
-    "debug": "^4.1.1",
-    "serialport": "^10.0.0"
+    "debug": "^4.1.1"
   }
 }
